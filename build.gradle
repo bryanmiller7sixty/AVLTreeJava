@@ -2,7 +2,10 @@ plugins {
     id 'java'
     id 'application'
 }
-
+apply plugin: 'java'
+compileJava {
+    options.encoding = "UTF-8"
+}
 // Define source sets which deviate from the default setup expected in Gradle projects
 sourceSets {
     main {

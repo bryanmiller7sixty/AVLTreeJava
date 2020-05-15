@@ -54,46 +54,46 @@ public class BinarySearchTreeTest {
     }
 
     @Test
-    public void testContains() {
-        assertTrue("Test contains failed - expected element should exist in this tree.",
-                strTree.contains(STRING_DATA[4]));
-    }
+//    public void testContains() {
+//        assertTrue("Test contains failed - expected element should exist in this tree.",
+//                strTree.contains(STRING_DATA[4]));
+//    }
+//
+//    @Test
+//    public void testContainsFailure() {
+//        assertFalse("Test contains failed - given element should have not been added to this tree.",
+//                strTree.contains(FIND_FAIL_DATA));
+//    }
+//
+//    @Test
+//    public void testRemove() {
+//        // Remove element
+//        assertTrue("Test remove failed - an element that was added to this tree should be removed.",
+//                strTree.remove(STRING_DATA[5]));
+//
+//        // Validate with contains
+//        assertFalse("Test remove failed - an element that was added to this tree should be removed.",
+//                strTree.contains(STRING_DATA[5]));
+//    }
+//
+//    @Test
+//    public void testRemoveFailure() {
+//        assertFalse("Test remove failed - element intended for removal does not exist in this tree.",
+//                strTree.remove(FIND_FAIL_DATA));
+//    }
 
-    @Test
-    public void testContainsFailure() {
-        assertFalse("Test contains failed - given element should have not been added to this tree.",
-                strTree.contains(FIND_FAIL_DATA));
-    }
+    //@Test
+//    public void testDelete() {
+//        // Delete element
+//        assertEquals("Test delete failed - method should return data of removed element.",
+//                STRING_DATA[7], strTree.delete(STRING_DATA[7]));
+//
+//        // Validate with contains
+//        assertFalse("Test delete failed - an element that was added to this list should be deleted.",
+//                strTree.contains(STRING_DATA[7]));
+//    }
 
-    @Test
-    public void testRemove() {
-        // Remove element
-        assertTrue("Test remove failed - an element that was added to this tree should be removed.",
-                strTree.remove(STRING_DATA[5]));
-
-        // Validate with contains
-        assertFalse("Test remove failed - an element that was added to this tree should be removed.",
-                strTree.contains(STRING_DATA[5]));
-    }
-
-    @Test
-    public void testRemoveFailure() {
-        assertFalse("Test remove failed - element intended for removal does not exist in this tree.",
-                strTree.remove(FIND_FAIL_DATA));
-    }
-
-    @Test
-    public void testDelete() {
-        // Delete element
-        assertEquals("Test delete failed - method should return data of removed element.",
-                STRING_DATA[7], strTree.delete(STRING_DATA[7]));
-
-        // Validate with contains
-        assertFalse("Test delete failed - an element that was added to this list should be deleted.",
-                strTree.contains(STRING_DATA[7]));
-    }
-
-    @Test
+    //@Test
     public void testDeleteFailure() {
         assertEquals("Test delete failed - element intended for deletion does not exist in this tree.",
                 null, strTree.delete(FIND_FAIL_DATA));

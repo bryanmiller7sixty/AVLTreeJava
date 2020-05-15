@@ -30,7 +30,7 @@ public class BinaryTree<E> implements Serializable {
     protected BinaryTree(Node<E> root) {
         this.root = root;
     }
-
+    protected boolean addReturn;
     /**
      * Full constructor to build a BinaryTree from provided data (for root) and left + right children/subtrees.
      *
@@ -156,7 +156,6 @@ public class BinaryTree<E> implements Serializable {
             preOrderTraverse(node.right, depth+1, sb);
         }
     }
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
